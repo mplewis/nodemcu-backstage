@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/Users/mplewis/Dropbox (Personal)/projectsync/kicad/NodeMCU Backstage/NodeMCU Backstage.sch")
-    (date "Monday, December 28, 2015 'PMt' 11:02:05 PM")
+    (date "Tuesday, December 29, 2015 'PMt' 02:39:03 PM")
     (tool "Eeschema 4.0.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -24,7 +24,7 @@
       (tstamp 5681EEDE))
     (comp (ref CON1)
       (value BARREL_JACK_NO_SW)
-      (footprint mplewis:PJ-037A)
+      (footprint mplewis:PJ-037A-VIAS)
       (libsource (lib mplewis) (part BARREL_JACK_NO_SW))
       (sheetpath (names /) (tstamps /))
       (tstamp 5681EF84))
@@ -173,10 +173,10 @@
   (libraries
     (library (logical mplewis)
       (uri "/Users/mplewis/Dropbox (Personal)/projectsync/kicad/_libs/mplewis/mplewis.lib"))
-    (library (logical device)
-      (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical transistors)
-      (uri "/Library/Application Support/kicad/library/transistors.lib")))
+      (uri "/Library/Application Support/kicad/library/transistors.lib"))
+    (library (logical device)
+      (uri "/Library/Application Support/kicad/library/device.lib")))
   (nets
     (net (code 1) (name GND)
       (node (ref U2) (pin 10))
